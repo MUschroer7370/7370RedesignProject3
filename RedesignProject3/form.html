@@ -3,27 +3,23 @@
 <head>
 <script>
 function validateForm() {
-    var x = document.forms["myForm"]["fname"].value;
-    if <x =="") {
-        alert("Name must be filled out");
-        return false;
-    }
+  var x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
 }
 </script>
 </head>
 <body>
 
-<h2>Send e-mail to ssmith@ridgefield.k12.us:</h2>
-
-<form action="mailto:someone@example.com" method="post" enctype="text/plain">
-Name:<br>
-<input type="text" name="name"><br>
-E-mail:<br>
-<input type="text" name="mail"><br>
-Comment:<br>
-<input type="text" name="comment" size="50"><br><br>
-<input type="submit" value="Send">
-<input type="reset" value="Reset">
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+  Email: <input type="text" email="femail">
+  <input type="submit" value="Submit">
+  Comments: <input type="submit" comments="fcomments">
+  <input type="submit" value="Submit">
 </form>
 
 </body>
