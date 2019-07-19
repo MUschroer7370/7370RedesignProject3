@@ -5,7 +5,18 @@
     <title>Mrs. Smith's 6th Grade Reading and Creative Writing</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Open+Sans:400,700|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
-<script src="helpers/modernizr_dev.js"></script>
+<script type="text/javascript">
+      
+function validateForm() {
+      
+var x=document.forms["myForm"]["name"].value;if (x=="")
+    {
+    alert("Name must be filled out");
+    return false;
+    }
+}
+      
+</script>
   </head>
   <body>
 
@@ -18,7 +29,7 @@
                     <li><a href="reading.html">Reading Class</a></li>
                     <li><a href="creativewriting.html">Creative Writing Class
                     <li><a href="aboutme.html">About Me</a></li>
-                        <li><a  href="gallery.html">Gallery</a></li></a></li>
+                        <li><a  href="gallery/gallery.html">Gallery</a></li></a></li>
                 </ul>
         	</nav>
     	</header>
